@@ -66,10 +66,17 @@ button.social-links {
 button.social-links.active {
     background-color: hsl(75, 94%, 57%); 
     cursor: pointer;
+    transform:scale(1.1);
 }
 
 /* Hover effect for social links */
 button.social-links:hover {
-    background-color: #555; /* Darker color on hover */
+    background-color: #949e28; /* Darker color on hover */
     transform: scale(1.05); /* Slightly increase size on hover */
 }
+/* Ensures hover when active class is added*/
+button.social-links.active:hover {
+    background-color: hsl(75, 94%, 57%); /* Darker color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
